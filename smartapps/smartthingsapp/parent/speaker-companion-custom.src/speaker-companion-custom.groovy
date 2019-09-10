@@ -4,17 +4,18 @@ definition(
     author: "fieldsjm",
     description: "Control your speaker, play a sound, a custom message when an event occurs or the system mode changes.",
     category: "My Apps",
-    iconUrl: "https://s3.amazonaws.com/smartapp-icons/Partner/sonos.png",
-    iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Partner/sonos@2x.png")
+    iconUrl: "https://raw.githubusercontent.com/fieldsjm/Resources/master/speaker.png",
+    iconX2Url: "https://raw.githubusercontent.com/fieldsjm/Resources/master/speaker@2x.png",
+    iconX3Url: "https://raw.githubusercontent.com/fieldsjm/Resources/master/speaker@3x.png")
 
 
 preferences {
     // The parent app preferences are pretty simple: just use the app input for the child app.
     page(name: "mainPage", title: "Speaker Companion", install: true, uninstall: true,submitOnChange: true) {
         section {
-            app(name: "speakerControl", appName: "Speaker Control", namespace: "smartThingsAPP", title: "Control - play/stop/pause/skip", multiple: true)
-            app(name: "speakerNotify", appName: "Speaker Notify with Sound", namespace: "smartThingsAPP", title: "Play a notification", multiple: true)
-            app(name: "weatherForecast", appName: "Speaker Weather Forecast", namespace: "smartThingsAPP", title: "Play weather report")
+            app(name: "speakerControl", appName: "Speaker Control", namespace: "smartThingsAPP", title: "Control - play/stop/pause/skip", required: true, multiple : false)
+            app(name: "speakerNotify", appName: "Speaker Notify with Sound", namespace: "smartThingsAPP", title: "Play a notification", required: true, multiple : false)
+            app(name: "weatherForecast", appName: "Speaker Weather Forecast", namespace: "smartThingsAPP", title: "Play weather report", required: true, multiple : false)
             }
     }
 }

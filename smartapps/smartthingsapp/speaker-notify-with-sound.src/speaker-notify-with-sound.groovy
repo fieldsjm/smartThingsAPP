@@ -22,9 +22,9 @@ definition(
 	description: "Play a sound or custom message through your Speaker when the mode changes or other events occur.",
     category: "My Apps",
     parent: "smartThingsAPP/parent:Speaker Companion (Custom)",
-    iconUrl: "https://s3.amazonaws.com/smartapp-icons/Partner/sonos.png",
-    iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Partner/sonos@2x.png"
-)
+    iconUrl: "https://raw.githubusercontent.com/fieldsjm/Resources/master/speaker.png",
+    iconX2Url: "https://raw.githubusercontent.com/fieldsjm/Resources/master/speaker@2x.png",
+    iconX3Url: "https://raw.githubusercontent.com/fieldsjm/Resources/master/speaker@3x.png")
 
 preferences {
 	page(name: "mainPage", title: "Play a message on your Speaker when something happens", install: true, uninstall: true)
