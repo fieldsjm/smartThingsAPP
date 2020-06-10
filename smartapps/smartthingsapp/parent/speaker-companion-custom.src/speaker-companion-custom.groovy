@@ -13,9 +13,9 @@ preferences {
     // The parent app preferences are pretty simple: just use the app input for the child app.
     page(name: "mainPage", title: "Speaker Companion", install: true, uninstall: true,submitOnChange: true) {
         section {
-            app(name: "speakerControl", appName: "Speaker Control", namespace: "smartThingsAPP", title: "Control - play/stop/pause/skip", required: true, multiple : false)
-            app(name: "speakerNotify", appName: "Speaker Notify with Sound", namespace: "smartThingsAPP", title: "Play a notification", required: true, multiple : false)
-            app(name: "weatherForecast", appName: "Speaker Weather Forecast", namespace: "smartThingsAPP", title: "Play weather report", required: true, multiple : false)
+            app(name: "speakerControl", appName: "Speaker Control", namespace: "smartThingsAPP", title: "Control - play/stop/pause/skip", required: false, multiple : false)
+            app(name: "speakerNotify", appName: "Speaker Notify with Sound", namespace: "smartThingsAPP", title: "Play a notification", required: false, multiple : false)
+            app(name: "weatherForecast", appName: "Speaker Weather Forecast", namespace: "smartThingsAPP", title: "Play weather report", required: false, multiple : false)
             }
     }
 }
